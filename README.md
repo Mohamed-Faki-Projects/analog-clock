@@ -7,4 +7,4 @@ license
 roadmap
 
 author
-This project is being developed by Mohamed Faki and Jacob Blevins you can contact Mohamed Faki at hammadi.faki@gmail.com | Jacob Blevins at JBlevinsIV@gmail.com
+This project is being developed by Mohamed Faki and Jacob Blevins you can contact Mohamed Faki at hammadi.faki@gmail.com | Jacob Blevins at Jacob@graucrow.com
