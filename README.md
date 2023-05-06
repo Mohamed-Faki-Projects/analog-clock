@@ -1,10 +1,11 @@
-# analog-clock
-A sleek and responsive analog clock built with HTML, CSS and JS, featuring customizable styles and a smooth animations with changeable time zone. 
-usuage
+### Analog-Clock
 
-license
+## A sleek and responsive analog clock built with HTML, CSS and JS, featuring customizable styles and a smooth animations with changeable time zone. 
 
-roadmap
+# License
 
-author
-This project is being developed by Mohamed Faki and Jacob Blevins you can contact Mohamed Faki at hammadi.faki@gmail.com | Jacob Blevins at Jacob@graucrow.com
+# Roadmap
+
+# Authors:
+    - Mohamed Faki | hammadi.faki@gmail.com
+    - Jacob Blevins | Jacob@graucrow.com
