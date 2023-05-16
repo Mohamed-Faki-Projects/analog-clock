@@ -3,54 +3,110 @@
 }
 
 * {
+    font-family: Arial, Helvetica, sans-serif;
     margin: 0;
-    border: 0;
+    padding: 0;
+    text-decoration: none;
     box-sizing: border-box;
-}
-
-body {
+    list-style-type: none;
+    font-size: 16px;
+  }
+  
+  body {
     background-color: #f2f2f2;
-}
-
-.grid-container {
+  }
+  
+  /* !-------------------------Grid container */
+  .grid {
     display: grid;
+    flex-wrap: wrap;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 1rem;
     height: 100vh;
     width: 100vw;
-    gap: 1rem;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas: 
-    "Header"
-    "Main"
-    "Footer";
-    border: 1px solid black;
-}
-
-.grid-header {
-    grid-area: Header;
+    grid-template-areas:
+      "Head Head Head"
+      "Main Main Main"
+      "Footer Footer Footer";
+  }
+  
+  /* !-------------------------Grid Head */
+  
+  .header {
+    grid-area: Head;
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     height: 5rem;
-    margin: 1rem;
-    border: 1px solid black
-}
-
-.grid-main {
+    background-color: #1c1c1c;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 30px 5%;
+  }
+  
+  .header-li-nav,
+  .header-a-nav {
+    display: inline-block;
+    padding: 1rem;
+    font-weight: 500;
+    color: #f2f2f2;
+    transition: all 0.3s ease 0s;
+  }
+  
+  .header-a-nav:hover {
+    color: #9da3a4;
+  }
+  
+  /* ?---------------Nested Head Grid */
+  
+  .header-nested {
+    display: grid;
+    flex-wrap: wrap;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    width: 100%;
+    grid-template-areas: "Header-Nav-Links Nav-Contact";
+  }
+  
+  .header-nav-links {
+    display: flex;
+    grid-area: Header-Nav-Links;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .header-nav-contact {
+    display: flex;
+    grid-area: Nav-Contact;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  /* !-------------------------Grid Main */
+  .main {
+    box-sizing: border-box;
+    display: grid;
+    flex-wrap: wrap;
     grid-area: Main;
-    height: 75vh;
-    margin: 1rem;
-    border: 1px solid black
-}
-
-.grid-footer {
+    height: 80vh;
+    width: 100vw;
+  }
+  
+  /* !-------------------------Grid Footer */
+  
+  .footer {
     grid-area: Footer;
     position: absolute;
-    bottom: 0;
+    bottom: 0px;
     left: 0;
     right: 0;
     height: 5rem;
-    margin: 1rem;
-    border: 1px solid black
-}
+    background-color: #1c1c1c;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
